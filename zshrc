@@ -34,6 +34,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 #Extraxt
 source ~/.config/zsh/plugins/zsh-extract/extract.plugin.zsh
 
+#Theme
+source ~/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
+
 #Completion
 autoload -U compinit && compinit
 kitty + complete setup zsh | source /dev/stdin

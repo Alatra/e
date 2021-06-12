@@ -1,3 +1,6 @@
 [submodule "plugins/zsh-extract"]
 	path = plugins/zsh-extract
 	url = https://github.com/le0me55i/zsh-extract
+[submodule "themes/powerlevel10k"]
+	path = themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k

@@ -8,3 +8,6 @@ ln ~/.config/zsh/zshrc ~/.zshrc </br>
 
 ## Highlighting https://github.com/zsh-users/zsh-syntax-highlighting
 sudo pacman -S zsh-syntax-highlighting
+
+## Themes
+# Power level 10 k https://github.com/romkatv/powerlevel10k
