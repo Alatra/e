@@ -17,7 +17,7 @@ fi
 
 #Setting
 alias ster="$EDITOR ~/.Xresources && xrdb ~/.Xresources"
-alias szsh="$EDITOR ~/.zshrc && source ~/.zshrc"
+alias sz="$EDITOR ~/.zshrc && source ~/.zshrc"
 
 #Git 
 alias ga="git add ."
@@ -27,6 +27,9 @@ alias gp="git push $1 origin"
 
 #Highligh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#Extraxt
+source ~/.config/zsh/plugins/zsh-extract/extract.plugin.zsh
 
 #Completion
 autoload -U compinit && compinit
