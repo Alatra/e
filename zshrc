@@ -25,6 +25,9 @@ alias gs="git status"
 alias gc="git commit -m"
 alias gp="git push $1 origin"
 
+#ls
+alias ls="ls --color=auto"
+
 #Highligh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
