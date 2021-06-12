@@ -23,6 +23,7 @@ alias szsh="$EDITOR ~/.zshrc && source ~/.zshrc"
 alias ga="git add ."
 alias gs="git status"
 alias gc="git commit -m"
+alias gp="git push $1 origin"
 
 #Highligh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
