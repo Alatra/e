@@ -22,6 +22,8 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
+bindkey "^[k" history-beginning-search-backward-end
+bindkey "^[j" history-beginning-search-forward-end
 
 #Avoid imbriqued nvim
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
