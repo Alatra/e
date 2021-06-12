@@ -10,4 +10,4 @@ ln ~/.config/zsh/zshrc ~/.zshrc </br>
 sudo pacman -S zsh-syntax-highlighting
 
 ## Themes
-# Power level 10 k https://github.com/romkatv/powerlevel10k
+### Power level 10 k https://github.com/romkatv/powerlevel10k
