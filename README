@@ -1,0 +1,5 @@
+#Setup
+
+git clone 
+mv e ~/.config/zsh
+ln ~/.config/zsh/zshrc ~/.zshrc
