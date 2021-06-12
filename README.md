@@ -2,7 +2,7 @@
 
 git clone --recurse-submodules --remote-submodules https://github.com/Alatra/e </br>
 mv e ~/.config/zsh </br>
-ln ~/.config/zsh/zshrc ~/.zshrc </br>
+ln -s ~/.config/zsh/zshrc ~/.zshrc </br>
 
 ## Plugins
 ### Extract https://github.com/le0me55i/zsh-extract
