@@ -1,3 +1,0 @@
-[submodule "zsh-extract"]
-	path = plugins/zsh-extract
-	url = https://github.com/le0me55i/zsh-extract
