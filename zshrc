@@ -31,7 +31,6 @@ if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
 fi
 
 #Alias
-
 #Setting
 alias ster="$EDITOR ~/.Xresources && xrdb ~/.Xresources"
 alias sz="$EDITOR ~/.config/zsh/zshrc && source ~/.config/zsh/zshrc"
@@ -44,6 +43,10 @@ alias gp="git push $1 origin"
 
 #ls
 alias ls="ls --color=auto"
+
+#Pacman
+alias spu="sudo pacman -Syyuu"
+alias spi="sudo pacman -S"
 
 
 #Plugins
