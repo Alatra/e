@@ -8,12 +8,17 @@ fi
 # Settings
 export EDITOR=/usr/bin/nvim
 export LANG=en_US.UTF-8
+
+
+#add doom path
+export PATH="$HOME/.emacs.d/bin:$PATH"
 xset -b #remve the bip
 
 #History
 HISTFILE=~/.config/zsh/zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+HISTORY_IGNORE='(ls|cd|pwd|exit|sz|ga|reboot|shutdown now|history|cd -|cd ..)'
 setopt SHARE_HISTORY
 
 #History search
