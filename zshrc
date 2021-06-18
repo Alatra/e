@@ -50,7 +50,7 @@ alias gac="git add . && git commit -m"
 gacp(){
     git add . 
     git commit -a -m $1
-    push $2 origin
+    git push $2 origin
 }
 
 
