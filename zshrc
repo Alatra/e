@@ -48,9 +48,8 @@ alias gp="git push $1 origin"
 alias gac="git add . && git commit -m"
 
 gacp(){
-    echo $1
-    echo $2
-    git commit -am $1
+    git add . 
+    git commit -a -m $1
     push $2 origin
 }
 
