@@ -41,10 +41,19 @@ alias ster="$EDITOR ~/.Xresources && xrdb ~/.Xresources"
 alias sz="$EDITOR ~/.config/zsh/zshrc && source ~/.config/zsh/zshrc"
 
 #Git 
-alias ga="git add ."
 alias gs="git status"
+alias ga="git add ."
 alias gc="git commit -m"
 alias gp="git push $1 origin"
+alias gac="git add . && git commit -m"
+
+gacp(){
+    echo $1
+    echo $2
+    git commit -am $1
+    push $2 origin
+}
+
 
 #ls
 alias ls="ls --color=auto"
