@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Settings
-export EDITOR=/usr/bin/nvim
+export EDITOR=~/.config/nvim/squashfs-root/usr/bin/nvim
 export LANG=en_US.UTF-8
 
 
@@ -46,13 +46,14 @@ alias ga="git add ."
 alias gc="git commit -m"
 alias gp="git push $1 origin"
 alias gac="git add . && git commit -m"
-
 gacp(){
     git add . 
     git commit -a -m $1
     git push
-
 }
+
+alias hist="history 0"
+
 
 
 #ls
@@ -61,6 +62,7 @@ alias ls="ls --color=auto"
 #Pacman
 alias spu="sudo pacman -Syyuu"
 alias spi="sudo pacman -S"
+alias spt="sudo pacman -Rcns"
 
 
 #Plugins
