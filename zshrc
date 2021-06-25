@@ -56,13 +56,14 @@ alias hist="history 0"
 
 
 
+alias nvim="~/.config/nvim/squashfs-root/usr/bin/nvim"
 #ls
 alias ls="ls --color=auto"
 
 #Pacman
 alias spu="sudo pacman -Syyuu"
 alias spi="sudo pacman -S"
-alias spt="sudo pacman -Rcns"
+alias spr="sudo pacman -Rcns"
 
 
 #Plugins
