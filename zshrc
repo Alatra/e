@@ -54,7 +54,9 @@ gacp(){
 
 alias hist="history 0"
 
-
+alias dual="xrandr --output HDMI1 --auto --right-of eDP1"
+alias audion="pactl set-card-profile 0 output:analog-stereo"
+alias audioh="pactl set-card-profile 0 output:hdmi-stereo"
 
 alias nvim="~/.config/nvim/squashfs-root/usr/bin/nvim"
 #ls
