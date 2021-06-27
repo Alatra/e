@@ -52,15 +52,27 @@ gacp(){
     git push
 }
 
-alias hist="history 0"
 
+
+#add screen + change sond
 alias dual="xrandr --output HDMI1 --auto --right-of eDP1"
 alias audion="pactl set-card-profile 0 output:analog-stereo"
 alias audioh="pactl set-card-profile 0 output:hdmi-stereo"
 
+#wifi interface
+alias wifis="nmcli device wifi list"
+alias wific="nmcli device wifi connect"
+alias wifion="nmcli radio wifi on"
+alias wifioff="nmcli radio wifi off"
+
+#nvim -> 0.5
 alias nvim="~/.config/nvim/squashfs-root/usr/bin/nvim"
+
 #ls
 alias ls="ls --color=auto"
+
+#history
+alias hist="history 0"
 
 #Pacman
 alias spu="sudo pacman -Syyuu"
@@ -86,3 +98,9 @@ source ~/.config/zsh/themes/p10k.zsh
 #Completion
 autoload -U compinit && compinit
 kitty + complete setup zsh | source /dev/stdin
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
