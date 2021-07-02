@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Settings
-export EDITOR=~/.config/nvim/squashfs-root/usr/bin/nvim
+export EDITOR=/usr/bin/nvim
 export LANG=en_US.UTF-8
 
 
@@ -39,6 +39,7 @@ fi
 #Setting
 alias ster="$EDITOR ~/.Xresources && xrdb ~/.Xresources"
 alias sz="$EDITOR ~/.config/zsh/zshrc && source ~/.config/zsh/zshrc"
+alias sx="$EDITOR ~/.xmonad/xmonad.hs"
 
 #Git 
 alias gs="git status"
@@ -52,8 +53,6 @@ gacp(){
     git push
 }
 
-
-
 #add screen + change sond
 alias dual="xrandr --output HDMI1 --auto --right-of eDP1"
 alias audion="pactl set-card-profile 0 output:analog-stereo"
@@ -64,9 +63,6 @@ alias wifis="nmcli device wifi list"
 alias wific="nmcli device wifi connect"
 alias wifion="nmcli radio wifi on"
 alias wifioff="nmcli radio wifi off"
-
-#nvim -> 0.5
-alias nvim="~/.config/nvim/squashfs-root/usr/bin/nvim"
 
 #ls
 alias ls="ls --color=auto"
