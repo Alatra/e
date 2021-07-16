@@ -54,7 +54,11 @@ gacp(){
 }
 
 #add screen + change sond
-alias dual="xrandr --output HDMI1 --auto --right-of eDP1"
+alias dual="xrandr --output HDMI1 --auto --right-of eDP1 && xmonad --restart"
+alias ones="xrandr --setmonitor all auto eDP1,HDMI1 && xmonad --restart"
+alias multis="xrandr --delmonitor all && xmonad --restart"
+
+#set the screen to take out the sound
 alias audion="pactl set-card-profile 0 output:analog-stereo"
 alias audioh="pactl set-card-profile 0 output:hdmi-stereo"
 
@@ -100,3 +104,5 @@ bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
+
+alias luamake=/home/waza/.config/nvim/lsp/lua-language-server/3rd/luamake/luamake
