@@ -54,8 +54,11 @@ gacp(){
 }
 
 #add screen + change sond
-alias dual="xrandr --output HDMI1 --auto --right-of eDP1 && xmonad --restart"
-alias ones="xrandr --setmonitor all auto eDP1,HDMI1 && xmonad --restart"
+alias dual="xrandr --output DP1-8 --auto --right-of HDMI1 && xmonad --restart"
+alias trio="xrandr --output HDMI1 --auto --right-of eDP1 && xmonad --restart"
+alias dualbis="xrandr --output DP1-9 --auto --right-of eDP1 && xmonad --restart"
+alias triobis="xrandr --output DP1-8 --auto --right-of DP1-9 && xmonad --restart"
+alias ones="xrandr --setmonitor all auto eDP1,DP1-9,HDMI1 && xmonad --restart"
 alias multis="xrandr --delmonitor all && xmonad --restart"
 
 #set the screen to take out the sound
